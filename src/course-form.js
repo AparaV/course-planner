@@ -1,11 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*Input Form*/
+/*Using react-jsonschema-form*/
 
-//import Test from './timer';
-//import PlannerForm from './form';
+import React from 'react';
 import Form from 'react-jsonschema-form';
-import CourseForm from './course-form';
 
 const schema = {
   type: "array",
@@ -34,19 +31,22 @@ const uiSchema = {
 
 const log = (type) => console.log.bind(console, type);
 
-class App extends React.Component {
+class CourseForm extends React.Component{
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Course Planner</h2>
+      <div className="row">
+        <div className="col-md-4"></div>
+        <div className="col-md-4">
+          <Form schema={schema}
+            uiSchema={uiSchema}
+            onChange={log("changed")}
+            onSubmit={log("submitted")}
+            onError={log("errors")} />
         </div>
-        <br></br><br></br>
-        <CourseForm />
+        <div className="col-md-4"></div>
       </div>
     );
   }
-};
+}
 
-module.exports = App;
+module.exports = CourseForm;

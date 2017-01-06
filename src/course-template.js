@@ -1,4 +1,5 @@
 /*Each Course Template*/
+/*No longer used*/
 
 import React from 'react';
 

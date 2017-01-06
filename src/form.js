@@ -1,9 +1,10 @@
 /*Main Input Form*/
+/*No longer used*/
 
 import React from 'react';
 import Course from './course-template';
 
-class Form extends React.Component{
+class PlannerForm extends React.Component{
 
   constructor(props){
     super(props);
@@ -53,4 +54,4 @@ class Form extends React.Component{
   }
 };
 
-module.exports = Form;
+module.exports = PlannerForm;
