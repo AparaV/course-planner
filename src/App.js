@@ -37,7 +37,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      submitted: false
+      submitted: false,
+      data: {}
     };
 
     this.onSubmit = this.onSubmit.bind(this);
@@ -46,7 +47,8 @@ class App extends React.Component {
   onSubmit({formData}) {
     console.log(formData["course-list"][0]);
     this.setState({
-      submitted: true
+      submitted: true,
+      data: formData["course-list"]
     });
   };
 
@@ -64,7 +66,7 @@ class App extends React.Component {
             <CourseForm onSubmit={({formData}) => this.onSubmit({formData})}/>
           </div>
           <div className="col-md-5">
-            <Plan submitted={this.state.submitted} />
+            <Plan submitted={this.state.submitted} data={this.state.data}/>
           </div>
           <div className="col-md-1"></div>
         </div>

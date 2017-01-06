@@ -18,8 +18,7 @@ const schema = {
         "properties": {
           "course-id": {
             "type": "string",
-            "title": "Course ID",
-            "default": "Enter course ID"
+            "title": "Course ID"
           },
           "pre-req": {
             "type": "string",
@@ -43,8 +42,8 @@ const uiSchema = {
 const formData = {
   "course-list": [
     {
-      "course-id": "Enter course ID",
-      "pre-req": ""
+      "course-id": "CSCI 2270",
+      "pre-req": "CSCI 1310"
     }
   ]
 };
