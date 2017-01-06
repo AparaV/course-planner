@@ -2,12 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-//import Test from './timer';
-//import PlannerForm from './form';
-import Form from 'react-jsonschema-form';
 import CourseForm from './course-form';
+import Plan from './plan.js';
 
-const schema = {
+/*const schema = {
   type: "array",
   title: "Courses",
   items: {
@@ -32,9 +30,26 @@ const uiSchema = {
   }
 };
 
-const log = (type) => console.log.bind(console, type);
+const log = (type) => console.log.bind(console, type);*/
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      submitted: false
+    };
+
+    this.onSubmit = this.onSubmit.bind(this);
+  };
+
+  onSubmit({formData}) {
+    console.log(formData["course-list"][0]);
+    this.setState({
+      submitted: true
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -43,7 +58,16 @@ class App extends React.Component {
           <h2>Course Planner</h2>
         </div>
         <br></br><br></br>
-        <CourseForm />
+        <div className="row">
+          <div className="col-md-1"></div>
+          <div className="col-md-5">
+            <CourseForm onSubmit={({formData}) => this.onSubmit({formData})}/>
+          </div>
+          <div className="col-md-5">
+            <Plan submitted={this.state.submitted} />
+          </div>
+          <div className="col-md-1"></div>
+        </div>
       </div>
     );
   }
