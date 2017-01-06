@@ -5,46 +5,63 @@ import React from 'react';
 import Form from 'react-jsonschema-form';
 
 const schema = {
-  type: "array",
-  title: "Courses",
-  items: {
-    type: "object",
-    required: ["title"],
-    properties: {
-      title: {
-        type: "string",
-        title: "Course ID"
-      },
-      details: {
-        type: "string",
-        title: "Pre-requisites"
+  "type": "object",
+  "properties": {
+    "course-list": {
+      "type": "array",
+      "title": "Course Builder",
+      "items": {
+        "type": "object",
+        "required": [
+          "course-id"
+        ],
+        "properties": {
+          "course-id": {
+            "type": "string",
+            "title": "Course ID",
+            "default": "Enter course ID"
+          },
+          "pre-req": {
+            "type": "string",
+            "title": "Pre-requisite courses",
+            "description": "(Separate multiple courses with comma)"
+          }
+        }
       }
+    }
+  }
+};
+
+const uiSchema = {
+  "course-list": {
+    "ui:options": {
+      orderable: false
     }
   }
 }
 
-const uiSchema = {
-  "ui:options": {
-    orderable: false
-  }
+const formData = {
+  "course-list": [
+    {
+      "course-id": "Enter course ID",
+      "pre-req": ""
+    }
+  ]
 };
 
-const log = (type) => console.log.bind(console, type);
+//const log = (type) => console.log.bind(console, type);
+
+//const onSubmit = ({formData}) => console.log(formData["course-list"][0]["course-id"]);
 
 class CourseForm extends React.Component{
   render() {
     return (
-      <div className="row">
-        <div className="col-md-4"></div>
-        <div className="col-md-4">
           <Form schema={schema}
+            formData={formData}
             uiSchema={uiSchema}
-            onChange={log("changed")}
-            onSubmit={log("submitted")}
-            onError={log("errors")} />
-        </div>
-        <div className="col-md-4"></div>
-      </div>
+            onSubmit={this.props.onSubmit}>
+            <button type="button submit" className="btn btn-success">Start planning!</button>
+        </Form>
     );
   }
 }
