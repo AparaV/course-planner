@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import CourseForm from './course-form';
-import Plan from './plan.js';
+import Plan from './plan';
+import schedule from './scheduler'
 
 /*const schema = {
   type: "array",
@@ -45,7 +46,7 @@ class App extends React.Component {
   };
 
   onSubmit({formData}) {
-    console.log(formData["course-list"][0]);
+    //console.log(formData["course-list"][0]);
     this.setState({
       submitted: true,
       data: formData["course-list"]
@@ -66,7 +67,7 @@ class App extends React.Component {
             <CourseForm onSubmit={({formData}) => this.onSubmit({formData})}/>
           </div>
           <div className="col-md-5">
-            <Plan submitted={this.state.submitted} data={this.state.data}/>
+            <Plan submitted={this.state.submitted} data={schedule(this.state.data)}/>
           </div>
           <div className="col-md-1"></div>
         </div>

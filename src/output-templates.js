@@ -3,7 +3,6 @@
 import React from 'react';
 
 function Default(props) {
-
   return(
     <div>
       <h3>
@@ -17,13 +16,13 @@ function Output(props) {
 
   var items = props.data.map((value) =>
     <li key={value.toString()}>
-      {value["course-id"]}, {value["pre-req"]}
+      {value}
     </li>);
 
   return(
     <div>
       <h3>Hello</h3>
-      <ul>{items}</ul>
+      <ol style={{textAlign:'left'}}>{items}</ol>
     </div>
   );
 };
