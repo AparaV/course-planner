@@ -4,34 +4,7 @@ import './App.css';
 
 import CourseForm from './course-form';
 import Plan from './plan';
-import schedule from './scheduler'
-
-/*const schema = {
-  type: "array",
-  title: "Courses",
-  items: {
-    type: "object",
-    required: ["title"],
-    properties: {
-      title: {
-        type: "string",
-        title: "Course ID"
-      },
-      details: {
-        type: "string",
-        title: "Pre-requisites"
-      }
-    }
-  }
-}
-
-const uiSchema = {
-  "ui:options": {
-    orderable: false
-  }
-};
-
-const log = (type) => console.log.bind(console, type);*/
+//import schedule from './scheduler'
 
 class App extends React.Component {
 
@@ -67,7 +40,7 @@ class App extends React.Component {
             <CourseForm onSubmit={({formData}) => this.onSubmit({formData})}/>
           </div>
           <div className="col-md-5">
-            <Plan submitted={this.state.submitted} data={schedule(this.state.data)}/>
+            <Plan submitted={this.state.submitted} data={(this.state.data)}/>
           </div>
           <div className="col-md-1"></div>
         </div>
