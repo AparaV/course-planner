@@ -6,6 +6,15 @@ The project is currently hosted on Heroku. You can try it out at [Course Planner
 
 This project was bootstrapped with [`create-react-app`](https://github.com/facebookincubator/create-react-app).
 
+## Run locally
+
+```
+$ git clone https://github.com/traxex33/course-planner.git
+$ cd course-planner
+$ npm install
+$ npm start
+```
+
 ## How does it work?
 
 The math is very simple. If a lot of courses share a pre-requisite course, then that pre-requisite must be a basic course having a high priority. And if a course does not have a pre-requisite, then it must obviously be one of the first courses to be completed.
