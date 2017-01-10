@@ -29,7 +29,7 @@ function Description(props) {
       <div className="col-md-3">
         <h3>How?</h3>
         <p style={{textAlign:'center'}}>
-          The math is very simple. If a a lot of courses share a pre-requisite coure, then that pre-requisite must be a basic course having a high priority.
+          The math is very simple. If a lot of courses share a pre-requisite course, then that pre-requisite must be a basic course having a high priority.
           And if a course does not have a pre-requisite, then it must obviously be one of the first courses to be completed.
         </p><br />
         <div className="col-md-1"></div>
