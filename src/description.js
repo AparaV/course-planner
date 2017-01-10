@@ -1,4 +1,10 @@
-/*Description and Footer*/
+/**Copyright (c) 2017 Aparajithan Venkateswaran (ssapar@gmail.com)
+ *
+ * This software is released under AGPLv3. For details see LICENSE
+ * that came with this software
+ */
+
+//Description and Footer
 
 import React from 'react';
 import classnames from 'classnames';

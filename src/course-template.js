@@ -1,3 +1,9 @@
+/**Copyright (c) 2017 Aparajithan Venkateswaran (ssapar@gmail.com)
+ *
+ * This software is released under AGPLv3. For details see LICENSE
+ * that came with this software
+ */
+
 /*Each Course Template*/
 /*No longer used*/
 

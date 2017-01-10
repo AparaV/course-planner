@@ -1,4 +1,10 @@
-/*Templates for the output view*/
+/**Copyright (c) 2017 Aparajithan Venkateswaran (ssapar@gmail.com)
+ *
+ * This software is released under AGPLv3. For details see LICENSE
+ * that came with this software
+ */
+
+//Templates for the output view
 
 import React from 'react';
 import schedule from './scheduler';

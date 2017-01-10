@@ -1,4 +1,10 @@
-/*Algorithm fro scheduling courses*/
+/**Copyright (c) 2017 Aparajithan Venkateswaran (ssapar@gmail.com)
+ *
+ * This software is released under AGPLv3. For details see LICENSE
+ * that came with this software
+ */
+
+//Algorithm for scheduling courses
 
 function format(data) {
   let output  = {};

@@ -1,5 +1,11 @@
-/*Input Form*/
-/*Using react-jsonschema-form*/
+/**Copyright (c) 2017 Aparajithan Venkateswaran (ssapar@gmail.com)
+ *
+ * This software is released under AGPLv3. For details see LICENSE
+ * that came with this software
+ */
+
+//Input Form
+//Using react-jsonschema-form
 
 import React from 'react';
 import Form from 'react-jsonschema-form';
