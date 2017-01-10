@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import CourseForm from './course-form';
 import Plan from './plan';
+import {Description, Footer} from './description';
 
 class App extends React.Component {
 
@@ -29,21 +29,23 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="App-header">
-          <span className="glyphicon glyphicon-calendar icon" aria-hidden="true" />
+          <span className="fa fa-calendar icon" aria-hidden="true" />
           <h2>Course Planner</h2>
         </div>
-        <br></br><br></br>
-        <div className="row">
+        <div className="row App-section main">
+          <br></br><br></br>
           <div className="col-md-2"></div>
-          <div className="col-md-3 section">
+          <div className="col-md-3">
             <CourseForm onSubmit={({formData}) => this.onSubmit({formData})}/>
           </div>
           <div className="col-md-2"></div>
-          <div className="col-md-3 section">
+          <div className="col-md-3">
             <Plan submitted={this.state.submitted} data={(this.state.data)}/>
           </div>
           <div className="col-md-2"></div>
         </div>
+        <Description styleName="App-section desc"/>
+        <Footer styleName="App-footer"/>
       </div>
     );
   }

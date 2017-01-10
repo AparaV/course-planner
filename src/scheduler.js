@@ -28,13 +28,13 @@ function schedule(data) {
   let counter = {};
   let answer = [];
 
-  console.log(courses);
+  //console.log(courses);
 
   //Creating a dictionary of weights to pre-requisite courses
   for (let i in courses) {
     //If the course has no pre-requisite courses
     if (courses[i].length === 0) {
-      console.log(courses[i], "empty");
+      //console.log(courses[i], "empty");
       answer.push(i);
       continue;
     }
@@ -47,19 +47,18 @@ function schedule(data) {
       }
     }
   }
-  console.log(counter);
+  //console.log(counter);
 
   //The magic happens here!
   while (Object.keys(counter).length !== 0){
     //Finding max
     let max = Object.keys(counter).reduce(function(a, b){ return counter[a] > counter[b] ? a : b })
-    console.log("max", max);
+    //console.log("max", max);
     if (!(isPresent(max, answer))){
       answer.push(max);
     }
 
     for (let i in courses) {
-      //console.log(courses[i]);
       if (isPresent(max, courses[i])) {
         let j = courses[i].indexOf(max);
         courses[i].splice(j, 1);
@@ -71,7 +70,7 @@ function schedule(data) {
 
     delete counter[max];
   }
-  console.log(answer);
+  //console.log(answer);
 
   return answer;
 };

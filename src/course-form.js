@@ -24,7 +24,7 @@ const schema = {
           "pre-req": {
             "type": "string",
             "title": "Pre-requisite courses",
-            "description": "(Separate multiple courses with comma)"
+            "description": "(Separate courses with comma)"
           }
         }
       }
@@ -70,7 +70,7 @@ class CourseForm extends React.Component{
             uiSchema={uiSchema}
             fields={fields}
             onSubmit={this.props.onSubmit}>
-            <button type="button submit" className="btn btn-success">Start planning!</button>
+            <button type="button submit" className="btn btn-submit">Start planning!</button>
         </Form>
     );
   }

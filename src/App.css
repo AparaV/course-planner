@@ -1,33 +1,49 @@
 .App {
   text-align: center;
-  margin: 20px;
+  display: inline-block;
+  /*margin: 20px;*/
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-footer {
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  background-color: #F57F17;
+}
+
+.fa {
+  color: #FFFFFF;
 }
 
 .App-header {
-  background-color: #212121;
-  border-radius: 25px;
+  background-color: #F57F17;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .App-intro {
   font-size: large;
 }
 
-.section {
-  background-color: #FFD740;
-  min-height: 400px;
-  margin: 10px;
+.App-section {
+  display: inline-block;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 25px;
 }
+
+.btn-submit {
+  background-color: #F57F17;
+  color: #FFFFFF;
+}
+
+.desc {
+  background-color: #FFEB3B;
+}
+
 
 hr {
   height: 12px;
@@ -45,6 +61,17 @@ hr.style2 {
 
 .icon {
   font-size: 250%;
+}
+
+.main {
+  background-color: #FFEB3B;
+}
+
+.btn-plus > i {
+  display: none;
+}
+.btn-plus::after {
+  content: "Add";
 }
 
 @keyframes App-logo-spin {

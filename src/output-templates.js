@@ -6,9 +6,7 @@ import schedule from './scheduler';
 function Default(props) {
   return(
     <div>
-      <h3>
-        Once you have finished entering all your courses, hit submit!
-      </h3>
+      <h3>Once you have submitted your entres you will see a carefully designed plan for you here</h3>
     </div>
   );
 };
