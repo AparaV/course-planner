@@ -4,7 +4,6 @@ import './App.css';
 
 import CourseForm from './course-form';
 import Plan from './plan';
-//import schedule from './scheduler'
 
 class App extends React.Component {
 
@@ -30,19 +29,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <span className="glyphicon glyphicon-calendar icon" aria-hidden="true" />
           <h2>Course Planner</h2>
         </div>
         <br></br><br></br>
         <div className="row">
-          <div className="col-md-1"></div>
-          <div className="col-md-5">
+          <div className="col-md-2"></div>
+          <div className="col-md-3 section">
             <CourseForm onSubmit={({formData}) => this.onSubmit({formData})}/>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-2"></div>
+          <div className="col-md-3 section">
             <Plan submitted={this.state.submitted} data={(this.state.data)}/>
           </div>
-          <div className="col-md-1"></div>
+          <div className="col-md-2"></div>
         </div>
       </div>
     );

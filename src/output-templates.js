@@ -24,9 +24,12 @@ function Output(props) {
 
   return(
     <div>
-      <h3>The plan</h3>
-      <h4>Here is one way you can proceed with your degree</h4>
-      <ol style={{textAlign:'left'}}>{items}</ol>
+      <h3>The Plan</h3>
+      <hr className="style1"/>
+      <h4>
+        <ol style={{textAlign:'left'}}>{items}</ol>
+      </h4>
+      <hr className="style2"/>
     </div>
   );
 };

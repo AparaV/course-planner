@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 20px;
 }
 
 .App-logo {
@@ -8,7 +9,8 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #212121;
+  border-radius: 25px;
   height: 150px;
   padding: 20px;
   color: white;
@@ -16,6 +18,33 @@
 
 .App-intro {
   font-size: large;
+}
+
+.section {
+  background-color: #FFD740;
+  min-height: 400px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px #FFAB00;
+  border-radius: 4px;
+}
+
+hr.style2 {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 -12px 12px -12px #FFAB00;
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 250%;
 }
 
 @keyframes App-logo-spin {

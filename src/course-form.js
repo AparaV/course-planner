@@ -3,6 +3,7 @@
 
 import React from 'react';
 import Form from 'react-jsonschema-form';
+import './App.css';
 
 const schema = {
   "type": "object",
@@ -48,9 +49,18 @@ const formData = {
   ]
 };
 
-//const log = (type) => console.log.bind(console, type);
+function CustomTitleField() {
+  return (
+    <div>
+      <h3>Course Builder</h3>
+      <hr />
+    </div>
+  );
+};
 
-//const onSubmit = ({formData}) => console.log(formData["course-list"][0]["course-id"]);
+const fields = {
+  TitleField: CustomTitleField
+};
 
 class CourseForm extends React.Component{
   render() {
@@ -58,6 +68,7 @@ class CourseForm extends React.Component{
           <Form schema={schema}
             formData={formData}
             uiSchema={uiSchema}
+            fields={fields}
             onSubmit={this.props.onSubmit}>
             <button type="button submit" className="btn btn-success">Start planning!</button>
         </Form>
