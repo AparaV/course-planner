@@ -2,7 +2,9 @@
 
 An application that helps you choose courses in a correct sequence to avoid missing pre-requisite courses. All you need to do is enter the courses you wish to take and the pre-requisites for each of them and let the computer take care of the rest for you.
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+The project is currently hosted on Heroku. You can try it out at [Course Planner](http://plancourses.herokuapp.com/).
+
+This project was bootstrapped with [`create-react-app`](https://github.com/facebookincubator/create-react-app).
 
 ## How does it work?
 
@@ -10,7 +12,6 @@ The math is very simple. If a lot of courses share a pre-requisite course, then 
 
 ## Future
 
-- [ ] Deploy it on Heroku
 - [ ] Feature to classify courses based on semesters (Fall, Spring) for a more fluid experience. This would include course credit restrictions (min and max)
 - [ ] Release it as a cross platform desktop app
 
