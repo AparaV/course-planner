@@ -21,14 +21,17 @@ The math is very simple. If a lot of courses share a pre-requisite course, then 
 
 ## Future
 
+- [ ] Adding co-requisites for a more precise (and logical) sequence
 - [ ] Feature to classify courses based on semesters (Fall, Spring) for a more fluid experience. This would include course credit restrictions (min and max)
 - [ ] Release it as a cross platform desktop app
 
-Any new ideas are welcome. So feel free to submit them in the form of an issue.
+All new ideas are welcome. So feel free to submit them in the form of an issue.
 
 ## Issues
 
-This project is in its early stages. So issues and bugs are bound to be present. If you come accross them, report it have it solved as soon as possible.
+This project is still in its early stages. So issues and bugs are bound to be present. If you come across them, report it  to have it solved as soon as possible.
+
+- [ ] In some cases, the order might be comply with the pre-requisites. But, a few courses need to swapped for a more sound sequence. This issue will be solved by adding an option for co-requisite (which is an upcoming feature).
 
 ## License
 
