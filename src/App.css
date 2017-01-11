@@ -73,13 +73,6 @@ hr.style2 {
   background-color: #FFEB3B;
 }
 
-.btn-plus > i {
-  display: none;
-}
-.btn-plus::after {
-  content: "Add";
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

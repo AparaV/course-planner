@@ -21,19 +21,20 @@ function Description(props) {
       <div className="col-md-4">
         <h3>Why?</h3>
         <p style={{textAlign:'center'}}>
-          Sometimes, when you're planning your future semesters and there seems to be tons of courses to choose from that you to get overwhelmed and give up.
-          At least this is what happened to me. And deep down, I realized that this is a very simple logic that dictated this, but doing it manually failed when you have a lot of options.
-          That is why I decided to make the computer do it.
+          Planning future semesters can be daunting when you have a lot of options.
+          But there is a very simple logic that dictates this process, and it does not work well when done manually.
+          That is why I decided to teach my computer do it.
         </p><br />
       </div>
       <div className="col-md-3">
         <h3>How?</h3>
         <p style={{textAlign:'center'}}>
-          The math is very simple. If a lot of courses share a pre-requisite course, then that pre-requisite must be a basic course having a high priority.
-          And if a course does not have a pre-requisite, then it must obviously be one of the first courses to be completed.
+          The math is very simple. A course is always preceded by pre-requisites.
+          If a lot of courses share a pre-requisite, then that pre-requisite must have a high priority.
         </p><br />
         <div className="col-md-1"></div>
       </div>
+      <br />
     </div>
   );
 };
@@ -44,7 +45,10 @@ function Footer(props){
       <div className="row">
         <div className="col-md-2"></div>
         <div className="col-md-8" style={{textAlign:'center'}}>
-
+          <a className="github-button" target="_blank" href="https://github.com/traxex33/course-planner" data-style="mega" aria-label="Star Course Planner on GitHub">Star</a>&nbsp;&nbsp;&nbsp;
+          <a className="github-button" target="_blank" href="https://github.com/traxex33" data-style="mega" aria-label="Follow @traxex33 on GitHub">Follow</a>&nbsp;&nbsp;&nbsp;
+          <a className="github-button" target="_blank" href="https://github.com/traxex33/course-planner/issues" data-style="mega" aria-label="Issue Course Planner on GitHub">Report Issue</a>
+          <br/><br/>
         </div>
         <div className="col-md-2"></div>
       </div>
