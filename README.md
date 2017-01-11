@@ -31,7 +31,7 @@ All new ideas are welcome. So feel free to submit them in the form of an issue.
 
 This project is still in its early stages. So issues and bugs are bound to be present. If you come across them, report it  to have it solved as soon as possible.
 
-- [ ] In some cases, the order might be comply with the pre-requisites. But, a few courses need to swapped for a more sound sequence. This issue will be solved by adding an option for co-requisite (which is an upcoming feature).
+- [ ] In some cases, the order might comply with the pre-requisites. But, a few courses need to swapped for a more sound sequence. This issue will be solved by adding an option for co-requisite (which is an upcoming feature).
 
 ## License
 
