@@ -11,9 +11,13 @@ function format(data) {
   for (let i in data) {
     //if (data.hasOwnProperty("course-id")){
       let temp = []
-      if (typeof(data[i]["pre-req"]) !== "undefined"){
-        temp = data[i]["pre-req"].split(', ');
+      if (typeof(data[i]["pre-req"]) !== "undefined" && (/\S/.test(data[i]["pre-req"]))){
+        temp = data[i]["pre-req"].split(',');
+        for (let i in temp) {
+          temp[i] = temp[i].trim();
+        }
       }
+      data[i]["course-id"] = data[i]["course-id"].trim();
       output[data[i]["course-id"]] = temp;
     //}
   }
