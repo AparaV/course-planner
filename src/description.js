@@ -45,9 +45,9 @@ function Footer(props){
       <div className="row">
         <div className="col-md-2"></div>
         <div className="col-md-8" style={{textAlign:'center'}}>
-          <a className="github-button" target="_blank" href="https://github.com/traxex33/course-planner" data-style="mega" aria-label="Star Course Planner on GitHub">Star</a>&nbsp;&nbsp;&nbsp;
-          <a className="github-button" target="_blank" href="https://github.com/traxex33" data-style="mega" aria-label="Follow @traxex33 on GitHub">Follow</a>&nbsp;&nbsp;&nbsp;
-          <a className="github-button" target="_blank" href="https://github.com/traxex33/course-planner/issues" data-style="mega" aria-label="Issue Course Planner on GitHub">Report Issue</a>
+          <a className="github-button" target="_blank" href="https://github.com/AparaV/course-planner" data-style="mega" aria-label="Star Course Planner on GitHub">Star</a>&nbsp;&nbsp;&nbsp;
+          <a className="github-button" target="_blank" href="https://github.com/AparaV" data-style="mega" aria-label="Follow @traxex33 on GitHub">Follow</a>&nbsp;&nbsp;&nbsp;
+          <a className="github-button" target="_blank" href="https://github.com/AparaV/course-planner/issues" data-style="mega" aria-label="Issue Course Planner on GitHub">Report Issue</a>
           <br/><br/>
         </div>
         <div className="col-md-2"></div>
@@ -57,7 +57,7 @@ function Footer(props){
         <div className="col-md-8" style={{textAlign:'center'}}>
           <a target="_blank" href="https://twitter.com/apara_v"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
           <a target="_blank" href="https://www.facebook.com/aparavenkateswaran"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
-          <a target="_blank" href="https://traxex33.github.io"><i className="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://aparav.github.io"><i className="fa fa-globe fa-2x" aria-hidden="true"></i></a>
         </div>
         <div className="col-md-2"></div>
       </div>

@@ -9,7 +9,7 @@ This project was bootstrapped with [`create-react-app`](https://github.com/faceb
 ## Run locally
 
 ```
-$ git clone https://github.com/traxex33/course-planner.git
+$ git clone https://github.com/AparaV/course-planner.git
 $ cd course-planner
 $ npm install
 $ npm start
